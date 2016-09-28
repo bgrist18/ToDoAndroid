@@ -22,9 +22,10 @@ public class MainActivity extends AppCompatActivity {
 
         list = (ListView) findViewById(R.id.List);
         text = (EditText) findViewById(R.id.editText);
-        addButton = (Button) findViewById(R.id.editText);
+        addButton = (Button) findViewById(R.id.button);
 
         items = new ArrayAdapter<ToDoItem>(this, android.R.layout.simple_list_item_1);
+        list.setAdapter(items);
 
     }
 }
